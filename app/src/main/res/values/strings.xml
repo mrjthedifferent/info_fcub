@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Info_fcub</string>
+
+    <string name="founder">
+    <![CDATA[
+    <html>
+     <head></head>
+     <body style="text-align:justify;color:black;background-color:#DDE5EE;">
+"As a public representative of the people of Chuadanga and Chairman of the Board of Trustee of the First Capital University of Bangladesh, I would like to take the opportunity and feel myself delighted to congratulate the people of all strata of Khulna Division in general and Chuadanga District in particular for extending me whole hearted cooperation and support to establish a private university for the people of this region.I am indeed grateful to the people of Chuadanga and greater Kushtia, whose inspiration, cooperation and guidance always encouraged me to undertake welfare programs for them in the past and this noble venture to establish a private university is the outcome of their inspiration and good wishes. I have no doubt that the people of this region will go ahead towards progress and prosperity and be enlightened owing to the establishment of this noble institution. I am particularly overwhelmed with joy, because we the people of Chuadanga, whose name and fame have become an integral part of our liberation war and independence, are the proud owner of this university.I am confident that this university will, under the pioneering leadership and guidance of present administration, will march forward with its noble mission and vision towards fulfilling the cherished goal of the common mass, for which the freedom fighters have sacrificed their lives. At this august moment, I would like to express my deep sense of gratitude to those who helped and encouraged me in many ways at all stages of its establishment, including the young enthusiastic dreamers of this institute. In this connection I fervently draw the attention of the people of all walks of life of this region to nourish this tree by extending cooperation, whatever and whenever it needs. Let us hope this university will create a new era in the history of education and be marked as a mile-stone in the political history Bangladesh. As an optimist, I do believe that this university will be turned into Harvard in the days to come and all of us, associated with this noble venture, will be the part of history of this institute.As Chairman of the Trustee Board, I warmly congratulate young students to choose this university for building up their career. I pray to the Almighty for their success and prosperity of the university. May Allah grant my prayer( Amin). "
+     </body>
+    </html>
+    ]]>
+    </string>
+
+    <string name="vcsir">
+    <![CDATA[
+    <html>
+     <head></head>
+     <body style="text-align:justify;color:black;background-color:#DDE5EE;">
+"It gives me profound pleasure to welcome all of you to visit the campus of the First Capital University of Bangladesh (FCUB), Chuadanga, a first full-fledged private University in Khulna Division that has recently started functioning with the full approval of the Government and University Grant Commission (UGC) after fulfillment of all requirements and formalities . The vision of they First Capital University of Bangladesh is to provide Education for Excellence that will enable young men and women of Bangladesh to face the challenges of the new millennium. The FCUB’s mission is to disseminate knowledge for human resource development aiming at enabling you young scholars to cope with the changing competitive world. The broad philosophy and objectives of education policy of the university are to provide quality education ensure uplifment of moral standard, create harmonious relationships, arouse sense of tolerance aiming at creating health atmosphere in the society which will reflect our national identity, culture and heritage. Initially established with four faculties, (1) Business Administration (2) Law (3)Health Science and Engineering (4) Arts and Science , the FCUB is located in a beautiful place lively with panoramic vie in the suburb, adjacent to Pouro College towards Kushtia road. FCUB is the first private University in Khulna Division where excellent computer lab. rich library, spacious and well ventilated class rooms, congenial politics free academic environment, highly educated and experienced teachers are full time available . At present it is housed in a four-storied magnificent building with a plan to shift in its own campus very soon. Young men and women, if you are aspirant to build up your career, don’t miss the opportunity to visit our campus and feel delighted to get yourself admitted in to the university. Our learned teachers and efficient staffs are always present in the campus and administrative office and guide you. Initially established with four faculties, (1) Business Administration (2) Law (3)Health Science and Engineering (4) Arts and Science , the FCUB is located in a beautiful place lively with panoramic vie in the suburb, adjacent to Pouro College towards Kushtia road. FCUB is the first private University in Khulna Division where excellent computer lab. rich library, spacious and well ventilated class rooms, congenial politics free academic environment, highly educated and experienced teachers are full time available . At present it is housed in a four-storied magnificent building with a plan to shift in its own campus very soon. Young men and women, if you are aspirant to build up your career, don’t miss the opportunity to visit our campus and feel delighted to get yourself admitted in to the university. Our learned teachers and efficient staffs are always present in the campus and administrative office and guide you."
+     </body>
+    </html>
+    ]]>
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="currentCGPA">Total Earned CGPA</string>
+    <string name="totalCredit">Total Earned Credits</string>
+    <string name="instruction">Please enter your value:</string>
+    <string-array name="grade_arrays">
+        <item>Grade</item>
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="chour_arrays">
+        <item>Credits</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="totalcredit">Total Credits</string>
+
+
+</resources>

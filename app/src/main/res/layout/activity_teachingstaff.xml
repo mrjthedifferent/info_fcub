@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.fcubd.info_fcub_mahfuz.teaching.teachingstaffActivity"
+    android:background="#028FD1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/topview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Professore and Advisore"
+                android:textAllCaps="false"
+                android:id="@+id/selimthoha"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/topview"
+                android:layout_centerHorizontal="true" />
+
+
+            //Dept of Agriculture
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/agricultureview"
+                android:layout_below="@+id/selimthoha"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of Agriculture"
+                android:textAllCaps="false"
+                android:id="@+id/agriculture"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/agricultureview"
+                android:layout_centerHorizontal="true" />
+
+            //Dept. Of Business Administration
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/buadmview"
+                android:layout_below="@+id/agriculture"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of Business Administration"
+                android:textAllCaps="false"
+                android:id="@+id/buadm"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/buadmview"
+                android:layout_centerHorizontal="true" />
+
+            //Dept. Of CSE
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/cseview"
+                android:layout_below="@+id/buadm"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of CSE"
+                android:textAllCaps="false"
+                android:id="@+id/cse"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/cseview"
+                android:layout_centerHorizontal="true" />
+
+            //Dept. Of EEE
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/eeeview"
+                android:layout_below="@+id/cse"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of EEE"
+                android:textAllCaps="false"
+                android:id="@+id/eee"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/eeeview"
+                android:layout_centerHorizontal="true" />
+
+            //Dept. Of English
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/englishview"
+                android:layout_below="@+id/eee"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of English"
+                android:textAllCaps="false"
+                android:id="@+id/english"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/englishview"
+                android:layout_centerHorizontal="true" />
+
+            //Dept. Of Law
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/lawview"
+                android:layout_below="@+id/english"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of LAW"
+                android:textAllCaps="false"
+                android:id="@+id/law"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/lawview"
+                android:layout_centerHorizontal="true" />
+
+            //Dept. Of Public Health
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/phview"
+                android:layout_below="@+id/law"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of Public Health"
+                android:textAllCaps="false"
+                android:id="@+id/ph"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/phview"
+                android:layout_centerHorizontal="true" />
+
+            //Dept. Of Sociology
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/sociologyview"
+                android:layout_below="@+id/ph"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department Of Sociology"
+                android:textAllCaps="false"
+                android:id="@+id/sociology"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/sociologyview"
+                android:layout_centerHorizontal="true" />
+
+            //bottom view
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/bottomview"
+                android:layout_below="@+id/sociology"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

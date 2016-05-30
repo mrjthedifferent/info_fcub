@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.fcubd.info_fcub_mahfuz.teaching.AgricultureActivity"
+    android:background="#028FD1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/nahidagricultureview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dr. Md. Nahid Parvez\nAssociate Professor"
+                android:textAllCaps="false"
+                android:id="@+id/nahidagriculture"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/nahidagricultureview"
+                android:layout_centerHorizontal="true" />
+
+            //golam sorwar
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/golamsorwaragricultureview"
+                android:layout_below="@+id/nahidagriculture"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Golam Sarwar\nLecturer"
+                android:textAllCaps="false"
+                android:id="@+id/golamsorwaragriculture"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/golamsorwaragricultureview"
+                android:layout_centerHorizontal="true" />
+
+            //mizanur rahman
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/mizanagricultureview"
+                android:layout_below="@+id/golamsorwaragriculture"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Mizanur Rahman\nLecturer"
+                android:textAllCaps="false"
+                android:id="@+id/mizanagriculture"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/mizanagricultureview"
+                android:layout_centerHorizontal="true" />
+
+            //tahmidar rahman
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/tahmidarrahmanview"
+                android:layout_below="@+id/mizanagriculture"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Tahmidar Rahman\nLecturer"
+                android:textAllCaps="false"
+                android:id="@+id/tahmidarrahman"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/tahmidarrahmanview"
+                android:layout_centerHorizontal="true" />
+
+            //shahin rana
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/shahinagricultureview"
+                android:layout_below="@+id/tahmidarrahman"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Shahin Rana\nLecturer"
+                android:textAllCaps="false"
+                android:id="@+id/shahinagriculture"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/shahinagricultureview"
+                android:layout_centerHorizontal="true" />
+
+            //bottom view
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/bottomviewagriculture"
+                android:layout_below="@+id/shahinagriculture"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

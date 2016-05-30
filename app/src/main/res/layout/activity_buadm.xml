@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.fcubd.info_fcub_mahfuz.teaching.buadmActivity"
+    android:background="#028FD1">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md. Najmul Hasan\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/najmul"
+            android:textColor="#ffffff"
+            android:background="#028FD1"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md. Astarul Haque\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/astarul"
+            android:textColor="#ffffff"
+            android:background="#028FD1"
+            android:layout_marginBottom="5dp"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md. Aminul Islam\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/aminul"
+            android:textColor="#ffffff"
+            android:background="#028FD1"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md. Mostafijur Rahman\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/mostafijur"
+            android:textColor="#ffffff"
+            android:background="#028FD1"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md.Sabuj Hoshen\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/sabuj"
+            android:textColor="#ffffff"
+            android:background="#028FD1"
+            android:layout_marginBottom="5dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

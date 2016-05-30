@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.fcubd.info_fcub_mahfuz.office.officestaffsActivity"
+    android:background="#028FD1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/view" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prof. Dr.M.Obaidul Islam Joarder\nVice-Chancellor"
+                android:textAllCaps="false"
+                android:id="@+id/vc"
+                android:textColor="#ffffff"
+                android:background="#028FD1"
+                android:layout_below="@+id/view"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/vc"
+                android:background="@android:color/black"
+                android:id="@+id/vcview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prof. Abdul Mottallib\nTreasurer"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/treasurer"
+                android:background="#028FD1"
+                android:layout_below="@+id/vcview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/treasurer"
+                android:background="@android:color/black"
+                android:id="@+id/treasurerview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prof. Harun-Ar-Rashid\nRegistrar"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/registrar"
+                android:background="#028FD1"
+                android:layout_below="@+id/treasurerview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/registrar"
+                android:background="@android:color/black"
+                android:id="@+id/registrarrview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dr. Mohbub Alam\nController Of Exam(Acting)"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/controller"
+                android:background="#028FD1"
+                android:layout_below="@+id/registrarrview"
+                android:layout_centerHorizontal="true" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/controller"
+                android:background="@android:color/black"
+                android:id="@+id/controllerview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abdul Mazib Biswas\nDirector Of Finance"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/finance"
+                android:background="#028FD1"
+                android:layout_below="@+id/controllerview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/finance"
+                android:background="@android:color/black"
+                android:id="@+id/financeview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Nafiul Islam (Shanto)\nAssistant Registrar"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/asregistrar"
+                android:background="#028FD1"
+                android:layout_below="@+id/financeview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/asregistrar"
+                android:background="@android:color/black"
+                android:id="@+id/asregistrarview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Mofijul Haque\nAdministrative Officer"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/adofficer"
+                android:background="#028FD1"
+                android:layout_below="@+id/asregistrarview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/adofficer"
+                android:background="@android:color/black"
+                android:id="@+id/adofficerview" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Mosiur Rahman\nAdmission Officer"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/admissionofficer"
+                android:background="#028FD1"
+                android:layout_below="@+id/adofficerview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/admissionofficer"
+                android:background="@android:color/black"
+                android:id="@+id/admissionofficerview" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shanjit Kumar\nAssistant Accounts Officer"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/accofficer"
+                android:background="#028FD1"
+                android:layout_below="@+id/admissionofficerview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/accofficer"
+                android:background="@android:color/black"
+                android:id="@+id/accofficerview" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mst. Nilufa Yesmin\nSection Officer"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/secofficer"
+                android:background="#028FD1"
+                android:layout_below="@+id/accofficerview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/secofficer"
+                android:background="@android:color/black"
+                android:id="@+id/secofficerview" />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Moniruzzaman\nComputer Operator (Reg.)"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/computeroperator"
+                android:background="#028FD1"
+                android:layout_below="@+id/secofficerview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/computeroperatorview"
+                android:layout_below="@+id/computeroperator" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Asaduzzaman\nComputer Operator (Cont. Exam)"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/computeroperator2"
+                android:background="#028FD1"
+                android:layout_below="@+id/computeroperatorview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/computeroperator2view"
+                android:layout_below="@+id/computeroperator2" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Abdul Aziz\nOffice Assistant"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/officeassistant"
+                android:background="#028FD1"
+                android:layout_below="@+id/computeroperator2view"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/officeassistantview"
+                android:layout_below="@+id/officeassistant" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Minal Uddin\nSupervisor"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/supervisor"
+                android:background="#028FD1"
+                android:layout_below="@+id/officeassistantview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/supervisorview"
+                android:layout_below="@+id/supervisor" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Habibur Rahman\nVC to M.L.S.S"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/vcmlss"
+                android:background="#028FD1"
+                android:layout_below="@+id/supervisorview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/vcmlssview"
+                android:layout_below="@+id/vcmlss" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sojol Mohammad\nM.L.S.S (Cont. Exam)"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/mlssexam"
+                android:background="#028FD1"
+                android:layout_below="@+id/vcmlssview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/mlssexamview"
+                android:layout_below="@+id/mlssexam" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Saiful Islam\nM.L.S.S (Reg.)"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/mlssreg"
+                android:background="#028FD1"
+                android:layout_below="@+id/mlssexamview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/mlssregview"
+                android:layout_below="@+id/mlssreg" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Johurul Islam\nM.L.S.S (Teaching Staff)"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/mlssstaff"
+                android:background="#028FD1"
+                android:layout_below="@+id/mlssregview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/mlssstaffview"
+                android:layout_below="@+id/mlssstaff" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Santu Rahman\nNight Guard"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/nightguard"
+                android:background="#028FD1"
+                android:layout_below="@+id/mlssstaffview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/nightguardview"
+                android:layout_below="@+id/nightguard" />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Md. Emon\nNight Guard"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/nightguard2"
+                android:background="#028FD1"
+                android:layout_below="@+id/nightguardview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/nightguard2view"
+                android:layout_below="@+id/nightguard2" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sree Gaurav Kumar Sarder\nCleaner"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/cleaner"
+                android:background="#028FD1"
+                android:layout_below="@+id/nightguard2view"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/cleanerview"
+                android:layout_below="@+id/cleaner" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mst. Selina Khatun\nAiya"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:id="@+id/aiya"
+                android:background="#028FD1"
+                android:layout_below="@+id/cleanerview"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/aiyaview"
+                android:layout_below="@+id/aiya" />
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
