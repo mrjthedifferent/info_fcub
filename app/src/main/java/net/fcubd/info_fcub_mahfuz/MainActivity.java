@@ -7,7 +7,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -19,6 +18,7 @@ import android.view.MenuItem;
 
 import net.fcubd.info_fcub_mahfuz.CGPA.cgpaActivity;
 import net.fcubd.info_fcub_mahfuz.navactivity.resultActivity;
+import net.fcubd.info_fcub_mahfuz.navactivity.websiteviewActivity;
 import net.fcubd.info_fcub_mahfuz.office.officestaffsActivity;
 import net.fcubd.info_fcub_mahfuz.teaching.teachingstaffActivity;
 
@@ -120,8 +120,12 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_cgpacalculator) {
 
-            Intent cgpa = new Intent(MainActivity.this,cgpaActivity.class);
+            Intent cgpa = new Intent(MainActivity.this, cgpaActivity.class);
             startActivity(cgpa);
+        }else if(id == R.id.nav_web){
+
+            Intent web = new Intent(MainActivity.this, websiteviewActivity.class);
+            startActivity(web);
 
         } else if (id == R.id.nav_About) {
 

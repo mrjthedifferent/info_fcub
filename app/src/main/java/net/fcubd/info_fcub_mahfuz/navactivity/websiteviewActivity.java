@@ -1,8 +1,10 @@
-package net.fcubd.info_fcub_mahfuz;
+package net.fcubd.info_fcub_mahfuz.navactivity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
@@ -16,51 +18,37 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
 
-import net.fcubd.info_fcub_mahfuz.navactivity.resultActivity;
+import net.fcubd.info_fcub_mahfuz.MainActivity;
+import net.fcubd.info_fcub_mahfuz.R;
 
-public class noticeActivity extends AppCompatActivity {
+public class websiteviewActivity extends AppCompatActivity {
 
-    WebView noticewebView;
-    ProgressDialog progressDialog;
+    WebView websitewebview;
 
     Button button;
     Button button2;
     Button button3;
 
-    final Activity activity=this;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         if(isNetworkAvailable()) {
-            setContentView(R.layout.activity_notice);
-            noticewebView = (WebView) findViewById(R.id.noticewebView);
-            WebSettings webSettings2 = noticewebView.getSettings();
-            webSettings2.setJavaScriptEnabled(true);
-            noticewebView.loadUrl("http://fcubd.net/notice.php");
-            noticewebView.setWebViewClient(new WebViewClient() {
+            setContentView(R.layout.activity_websiteview);
+            websitewebview = (WebView) findViewById(R.id.websitewebview);
+            WebSettings webSettings3 = websitewebview.getSettings();
+            webSettings3.setJavaScriptEnabled(true);
+            websitewebview.loadUrl("http://fcubd.net");
+            websitewebview.setWebViewClient(new WebViewClient() {
                 @Override
                 public void onPageStarted(WebView view, String url, Bitmap favicon) {
                     super.onPageStarted(view, url, favicon);
-                    if (progressDialog == null) {
-                        progressDialog = new ProgressDialog(activity);
-                        progressDialog.setMessage("Connecting to Notice Board...");
-                        progressDialog.show();
-
-                        // Hide the webview while loading
-                        noticewebView.setEnabled(false);
-                    }
+                    findViewById(R.id.websiteprogress).setVisibility(View.VISIBLE);
                 }
 
                 @Override
                 public void onPageFinished(WebView view, String url) {
-                    if (progressDialog.isShowing()) {
-                        progressDialog.dismiss();
-                        progressDialog = null;
-                        noticewebView.setEnabled(true);
-                    }
+                    findViewById(R.id.websiteprogress).setVisibility(View.GONE);
                 }
 
                 public void onReceivedError(WebView view, int errorCod, String description, String failingUrl) {
@@ -73,7 +61,7 @@ public class noticeActivity extends AppCompatActivity {
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent goback = new Intent(noticeActivity.this, MainActivity.class);
+                            Intent goback = new Intent(websiteviewActivity.this, MainActivity.class);
                             startActivity(goback);
                         }
                     });
@@ -81,7 +69,7 @@ public class noticeActivity extends AppCompatActivity {
                     button2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent tryagain = new Intent(noticeActivity.this, resultActivity.class);
+                            Intent tryagain = new Intent(websiteviewActivity.this, resultActivity.class);
                             startActivity(tryagain);
                         }
                     });
@@ -94,7 +82,7 @@ public class noticeActivity extends AppCompatActivity {
                             startActivity(settings);
                         }
                     });
-                    Toast.makeText(noticeActivity.this, "Your Internet Connection May not be active Or " + description, Toast.LENGTH_LONG).show();
+                    Toast.makeText(websiteviewActivity.this, "Your Internet Connection May not be active Or " + description, Toast.LENGTH_LONG).show();
                 }
             });
 
@@ -110,7 +98,7 @@ public class noticeActivity extends AppCompatActivity {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent goback = new Intent(noticeActivity.this, MainActivity.class);
+                    Intent goback = new Intent(websiteviewActivity.this, MainActivity.class);
                     startActivity(goback);
                 }
             });
@@ -118,7 +106,7 @@ public class noticeActivity extends AppCompatActivity {
             button2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent tryagain = new Intent(noticeActivity.this, resultActivity.class);
+                    Intent tryagain = new Intent(websiteviewActivity.this, resultActivity.class);
                     startActivity(tryagain);
                 }
             });
@@ -131,17 +119,7 @@ public class noticeActivity extends AppCompatActivity {
                     startActivity(settings);
                 }
             });
-
-            Toast.makeText(noticeActivity.this, "you cannot see notice untill you go online", Toast.LENGTH_SHORT).show();
-
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent gotomain = new Intent(noticeActivity.this, MainActivity.class);
-        startActivity(gotomain);
-        return;
     }
 
     private boolean isNetworkAvailable(){

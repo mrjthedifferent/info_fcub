@@ -271,7 +271,8 @@
         <activity android:name=".teaching.ph.mahmudulActivity" />
         <activity android:name=".teaching.ph.nazmulActivity" />
         <activity android:name=".teaching.ph.rockyActivity" />
-        <activity android:name=".teaching.ph.sazinActivity"></activity>
+        <activity android:name=".teaching.ph.sazinActivity" />
+        <activity android:name=".navactivity.websiteviewActivity" />
     </application>
 
 </manifest>
