@@ -29,7 +29,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/nahidagriculture"
                 android:textColor="#ffffff"
-                android:background="#028FD1"
+                android:background="@android:color/transparent"
                 android:layout_below="@+id/nahidagricultureview"
                 android:layout_centerHorizontal="true" />
 
@@ -50,7 +50,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/golamsorwaragriculture"
                 android:textColor="#ffffff"
-                android:background="#028FD1"
+                android:background="@android:color/transparent"
                 android:layout_below="@+id/golamsorwaragricultureview"
                 android:layout_centerHorizontal="true" />
 
@@ -71,7 +71,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/mizanagriculture"
                 android:textColor="#ffffff"
-                android:background="#028FD1"
+                android:background="@android:color/transparent"
                 android:layout_below="@+id/mizanagricultureview"
                 android:layout_centerHorizontal="true" />
 
@@ -92,7 +92,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/tahmidarrahman"
                 android:textColor="#ffffff"
-                android:background="#028FD1"
+                android:background="@android:color/transparent"
                 android:layout_below="@+id/tahmidarrahmanview"
                 android:layout_centerHorizontal="true" />
 
@@ -113,7 +113,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/shahinagriculture"
                 android:textColor="#ffffff"
-                android:background="#028FD1"
+                android:background="@android:color/transparent"
                 android:layout_below="@+id/shahinagricultureview"
                 android:layout_centerHorizontal="true" />
 
