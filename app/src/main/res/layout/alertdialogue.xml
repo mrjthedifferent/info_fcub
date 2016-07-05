@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDE5EE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Select your Choice !"
+            android:textColor="#028FD1"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/call"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitCenter"
+                android:background="#DDE5EE"
+                android:id="@+id/call"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/sms"
+                android:scaleType="fitCenter"
+                android:background="#DDE5EE"
+                android:id="@+id/sms"
+                android:layout_toEndOf="@+id/call"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:id="@+id/declineButton"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/mrjbutton"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+</LinearLayout>

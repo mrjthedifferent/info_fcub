@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDE5EE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_information"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/p1"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/jewel_img"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/p1"
+            android:contentDescription="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/jewel_info"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_below="@+id/jewel_img"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_info"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:id="@+id/p2"
+            android:layout_below="@id/jewel_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/mobile"
+            android:layout_below="@+id/p2"
+            android:layout_alignLeft="@+id/p1"
+            android:layout_alignStart="@+id/p1" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_1"
+            android:layout_marginTop="-15dp"
+            android:layout_below="@+id/mobile"
+            android:layout_alignLeft="@+id/p2"
+            android:layout_alignStart="@+id/p2"
+            android:theme="@style/mrjbutton"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:id="@+id/button_2"
+            android:layout_below="@+id/button_1"
+            android:layout_alignLeft="@+id/p2"
+            android:layout_alignStart="@+id/p2"
+            android:theme="@style/mrjbutton"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/email"
+            android:layout_marginTop="-15dp"
+            android:layout_below="@+id/button_2"
+            android:layout_alignLeft="@+id/p1"
+            android:layout_alignStart="@+id/p1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_3"
+            android:layout_below="@+id/email"
+            android:layout_alignLeft="@+id/p2"
+            android:layout_alignStart="@+id/p2"
+            android:theme="@style/mrjbutton"
+            android:textAllCaps="false"
+            android:layout_marginTop="-15dp"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Me On Facebook:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/facebook"
+            android:layout_below="@+id/button_3"
+            android:layout_alignLeft="@+id/p1"
+            android:layout_alignStart="@+id/p1" />
+
+//facebook info
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/fb_logo"
+                android:id="@+id/fb_logo"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/facebook"
+                android:layout_alignLeft="@+id/p2"
+                android:layout_alignStart="@+id/p2"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_4"
+                android:layout_below="@+id/facebook"
+                android:layout_toRightOf="@+id/fb_logo"
+                android:layout_toEndOf="@+id/fb_logo"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"/>
+
+        //twitter info
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow Me On Twitter:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/twitter"
+            android:layout_below="@+id/button_4"
+            android:layout_alignLeft="@+id/p1"
+            android:layout_alignStart="@+id/p1" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/twitter"
+            android:id="@+id/twitter_logo"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/twitter"
+            android:layout_alignLeft="@+id/p2"
+            android:layout_alignStart="@+id/p2"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_5"
+            android:layout_below="@+id/twitter"
+            android:layout_toRightOf="@+id/fb_logo"
+            android:layout_toEndOf="@+id/fb_logo"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        //skype info
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Me On Skype:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/skype"
+            android:layout_below="@+id/button_5"
+            android:layout_alignLeft="@+id/p1"
+            android:layout_alignStart="@+id/p1" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/skype"
+            android:id="@+id/skype_logo"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/skype"
+            android:layout_alignLeft="@+id/p2"
+            android:layout_alignStart="@+id/p2"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_6"
+            android:layout_below="@+id/skype"
+            android:layout_toRightOf="@+id/fb_logo"
+            android:layout_toEndOf="@+id/fb_logo"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false" />
+
+        //Messenger info
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messenger:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/messenger"
+            android:layout_below="@+id/button_6"
+            android:layout_alignLeft="@+id/p1"
+            android:layout_alignStart="@+id/p1" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/messenger"
+            android:id="@+id/messenger_logo"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/messenger"
+            android:layout_alignLeft="@+id/p2"
+            android:layout_alignStart="@+id/p2"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_7"
+            android:layout_below="@+id/messenger"
+            android:layout_toRightOf="@+id/fb_logo"
+            android:layout_toEndOf="@+id/fb_logo"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        //Web info
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/web"
+            android:layout_below="@+id/button_7"
+            android:layout_alignLeft="@+id/p1"
+            android:layout_alignStart="@+id/p1" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/web"
+            android:id="@+id/web_logo"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/web"
+            android:layout_alignLeft="@+id/p2"
+            android:layout_alignStart="@+id/p2"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_8"
+            android:layout_below="@+id/web"
+            android:layout_toRightOf="@+id/fb_logo"
+            android:layout_toEndOf="@+id/fb_logo"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Academic Qualifications:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/p3"
+            android:layout_below="@id/button_8"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/academic_info"
+            android:textAllCaps="false"
+            android:layout_below="@+id/p3"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experiences:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/p4"
+            android:layout_below="@id/academic_info"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:id="@+id/experience"
+            android:textAllCaps="false"
+            android:layout_below="@+id/p4"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

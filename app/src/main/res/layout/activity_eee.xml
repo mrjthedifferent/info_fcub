@@ -1,12 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="net.fcubd.info_fcub_mahfuz.teaching.eee.eeeActivity">
+    tools:context="net.fcubd.info_fcub_mahfuz.teaching.eee.eeeActivity"
+    android:background="#028FD1">
 
-</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        /*iqbal sir*/
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr. Sayeed Mohammad Iqbal\nAssociate Professore"
+            android:textAllCaps="false"
+            android:id="@+id/iqbalsir"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md. Arifur Rahman\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/arifur"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+</ScrollView>

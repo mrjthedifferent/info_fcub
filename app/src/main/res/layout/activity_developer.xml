@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.fcubd.info_fcub_mahfuz.navactivity.developerActivity"
+    android:background="#028FD1">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/developer_shape"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        //jewel info start
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Developed By : "
+                    android:layout_centerHorizontal="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/software_developer"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/software_developer"
+                        android:background="@drawable/linearlayout_shape"
+                        android:id="@+id/jewel_layout">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Md. Mahfuzur Rahman Jewel\nB.Sc in Computer Science and Engineering\nFirst Capital University of Bangladesh"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:id="@+id/jewel_text"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click for more info.."
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/jewel_text"
+                            android:layout_gravity="center"/>
+
+                    </RelativeLayout>
+
+                //jewel info end
+
+                //rony vai info start
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technical Support By : "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/rony_vai_work"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/jewel_layout"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rony_vai_work"
+                    android:layout_marginTop="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/linearlayout_shape"
+                        android:id="@+id/rony_layout">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rakib Uddin Rony\nB.Sc in Computer Science and Engineering\nFirst Capital University of Bangladesh"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:textColor="#000000"
+                            android:layout_gravity="center"
+                            android:id="@+id/rony_text"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click for more info.."
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/rony_text"
+                            android:layout_gravity="center"/>
+
+
+                    </RelativeLayout>
+
+                    //rony vai info end
+
+
+                    //tomal sir info start
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Special Thanks To : "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/tomal_sir_work"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_below="@+id/rony_layout"
+                        android:layout_centerHorizontal="true"/>
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tomal_sir_work"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/linearlayout_shape"
+                            android:id="@+id/tomal_layout">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Khandaker Takdir Ahmed\nLecturer\nDepartment of CSE\nFirst Capital University of Bangladesh"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textColor="#000000"
+                                android:layout_gravity="center"
+                                android:id="@+id/tomal_text"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Click for more info.."
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/tomal_text"
+                                android:layout_gravity="center"/>
+
+                        </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

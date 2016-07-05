@@ -30,7 +30,7 @@
             android:textAllCaps="false"
             android:id="@+id/najmul"
             android:textColor="#ffffff"
-            android:background="#028FD1"/>
+            android:background="@android:color/transparent"/>
 
 
         <View
@@ -46,7 +46,7 @@
             android:textAllCaps="false"
             android:id="@+id/astarul"
             android:textColor="#ffffff"
-            android:background="#028FD1"
+            android:background="@android:color/transparent"
             android:layout_marginBottom="5dp"/>
 
 
@@ -64,7 +64,7 @@
             android:textAllCaps="false"
             android:id="@+id/aminul"
             android:textColor="#ffffff"
-            android:background="#028FD1"
+            android:background="@android:color/transparent"
             android:layout_marginBottom="5dp"/>
 
         <View
@@ -80,7 +80,7 @@
             android:textAllCaps="false"
             android:id="@+id/mostafijur"
             android:textColor="#ffffff"
-            android:background="#028FD1"
+            android:background="@android:color/transparent"
             android:layout_marginBottom="5dp"/>
 
         <View
@@ -96,8 +96,14 @@
             android:textAllCaps="false"
             android:id="@+id/sabuj"
             android:textColor="#ffffff"
-            android:background="#028FD1"
+            android:background="@android:color/transparent"
             android:layout_marginBottom="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
 
 
     </LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.fcubd.info_fcub_mahfuz.navactivity.aboutActivity"
+    android:background="#DDE5EE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:padding="10dp"
+            android:id="@+id/about_logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Info_FCUB Android App"
+            android:padding="5dp"
+            android:id="@+id/app_name"
+            android:layout_below="@+id/about_logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Version: 2.0.1"
+            android:layout_below="@+id/app_name"
+            android:id="@+id/app_version"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <blink xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/app_version">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check for Updates"
+                android:textColor="#fc3737"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/checkbutton"
+                android:textStyle="bold"
+                android:theme="@style/mrjbutton"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+        </blink>
+
+    </RelativeLayout>
+
+</ScrollView>

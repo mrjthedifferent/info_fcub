@@ -15,8 +15,7 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <style name="TextViewAppearance.Headline2" parent="@style/TextViewAppearance">
         <item name="typeface">robotoLight</item>
@@ -37,4 +36,10 @@
         <!-- Supports API Level 17+ -->
         <!-- <item name="android:paddingEnd">26dp</item> -->
     </style>
+
+    <style name="mrjbutton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#028FD1</item>
+    </style>
+
+
 </resources>

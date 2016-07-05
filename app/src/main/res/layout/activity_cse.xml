@@ -30,7 +30,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/iqbalsir"
                 android:textColor="#ffffff"
-                android:background="#028FD1"/>
+                android:background="@android:color/transparent"/>
 
             /*tomal sir*/
 
@@ -47,7 +47,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/tomalsir"
                 android:textColor="#ffffff"
-                android:background="#028FD1"
+                android:background="@android:color/transparent"
                 android:layout_marginBottom="5dp"/>
 
             /*Shafiq Sir*/
@@ -65,9 +65,14 @@
                 android:textAllCaps="false"
                 android:id="@+id/shafiq"
                 android:textColor="#ffffff"
-                android:background="#028FD1"
+                android:background="@android:color/transparent"
                 android:layout_marginBottom="5dp"/>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/black" />
 
         </LinearLayout>
 

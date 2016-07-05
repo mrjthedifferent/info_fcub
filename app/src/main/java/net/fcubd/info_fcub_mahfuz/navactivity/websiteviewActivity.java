@@ -24,10 +24,13 @@ import net.fcubd.info_fcub_mahfuz.R;
 public class websiteviewActivity extends AppCompatActivity {
 
     WebView websitewebview;
+    ProgressDialog progressDialog;
 
     Button button;
     Button button2;
     Button button3;
+
+    final Activity activity=this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +46,25 @@ public class websiteviewActivity extends AppCompatActivity {
                 @Override
                 public void onPageStarted(WebView view, String url, Bitmap favicon) {
                     super.onPageStarted(view, url, favicon);
-                    findViewById(R.id.websiteprogress).setVisibility(View.VISIBLE);
+                    if (progressDialog == null) {
+                        progressDialog = new ProgressDialog(activity);
+                        progressDialog.setMessage("Connecting to Server...");
+                        progressDialog.show();
+
+                        // Hide the webview while loading
+                        websitewebview.setEnabled(false);
+                    }
                 }
 
                 @Override
                 public void onPageFinished(WebView view, String url) {
-                    findViewById(R.id.websiteprogress).setVisibility(View.GONE);
+                    if (progressDialog.isShowing()) {
+                        progressDialog.dismiss();
+                        progressDialog = null;
+                        websitewebview.setEnabled(true);
+                    }
                 }
+
 
                 public void onReceivedError(WebView view, int errorCod, String description, String failingUrl) {
                     setContentView(R.layout.activity_error);

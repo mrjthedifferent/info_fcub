@@ -3,14 +3,20 @@ package net.fcubd.info_fcub_mahfuz.CGPA;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import net.fcubd.info_fcub_mahfuz.MainActivity;
 import net.fcubd.info_fcub_mahfuz.R;
 
 import java.text.DecimalFormat;
@@ -48,6 +54,9 @@ public class cgpaActivity extends AppCompatActivity {
     private static final int DIALOG_ALERT = 10;
     private String info;
 
+    ImageView cgpa_help;
+    ImageView credit_help;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +64,45 @@ public class cgpaActivity extends AppCompatActivity {
 
         addListenerOnButton();
 
+        cgpa_help = (ImageView)findViewById(R.id.cgpa_help);
+        credit_help = (ImageView)findViewById(R.id.credit_help);
+
+        cgpa_help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                AlertDialog alertDialog = new AlertDialog.Builder(cgpaActivity.this).create();
+                alertDialog.setMessage("Input your past semester's earned CGPA here. otherwise if you want to calculate only one semester's CGPA, then input it 0 or ignore this.");
+                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                alertDialog.show();
+
+            }
+        });
+
+        credit_help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog alertDialog2 = new AlertDialog.Builder(cgpaActivity.this).create();
+                alertDialog2.setMessage("Input your past semester's earned Credit here. otherwise if you want to calculate only one semester's CGPA, then input it 0 or ignore this.");
+                alertDialog2.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                alertDialog2.show();
+
+            }
+        });
+
     }
+
 
     public void addListenerOnButton() {
 

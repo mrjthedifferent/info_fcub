@@ -3,8 +3,6 @@ package net.fcubd.info_fcub_mahfuz;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.support.design.widget.NavigationView;
@@ -17,10 +15,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import net.fcubd.info_fcub_mahfuz.CGPA.cgpaActivity;
+import net.fcubd.info_fcub_mahfuz.navactivity.aboutActivity;
+import net.fcubd.info_fcub_mahfuz.navactivity.contactActivity;
+import net.fcubd.info_fcub_mahfuz.navactivity.developerActivity;
 import net.fcubd.info_fcub_mahfuz.navactivity.resultActivity;
 import net.fcubd.info_fcub_mahfuz.navactivity.websiteviewActivity;
-import net.fcubd.info_fcub_mahfuz.office.officestaffsActivity;
-import net.fcubd.info_fcub_mahfuz.teaching.teachingstaffActivity;
+import net.fcubd.info_fcub_mahfuz.parallaxActivity.officestaffsActivity;
+import net.fcubd.info_fcub_mahfuz.parallaxActivity.teachingstaffsActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_teachingstaff) {
 
-            Intent teachingstaff = new Intent(MainActivity.this,teachingstaffActivity.class);
+            Intent teachingstaff = new Intent(MainActivity.this,teachingstaffsActivity.class);
             startActivity(teachingstaff);
 
         } else if (id == R.id.nav_result) {
@@ -127,9 +128,20 @@ public class MainActivity extends AppCompatActivity
             Intent web = new Intent(MainActivity.this, websiteviewActivity.class);
             startActivity(web);
 
+        } else if (id == R.id.nav_contact) {
+
+            Intent contact = new Intent(MainActivity.this, contactActivity.class);
+            startActivity(contact);
+
         } else if (id == R.id.nav_About) {
 
-        } else if (id == R.id.nav_Developer) {
+            Intent about = new Intent(MainActivity.this, aboutActivity.class);
+            startActivity(about);
+
+        }else if (id == R.id.nav_Developer) {
+
+            Intent developer = new Intent(MainActivity.this, developerActivity.class);
+            startActivity(developer);
 
         }
 

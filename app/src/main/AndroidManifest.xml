@@ -7,6 +7,11 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +19,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        //Splash Screen
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
@@ -37,242 +43,549 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".office.officestaffsActivity"
-            android:label="Officer Staff"
+            android:name=".office.vcActivity"
+            android:label="Vice-Chancellor"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.treasurerActivity"
+            android:label="Treasurer"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.registrarActivity"
+            android:label="Registrar"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.controllerActivity"
+            android:label="Controller of Exam"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.financeActivity"
+            android:label="D.Director of Fianance"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.asregistrarActivity"
+            android:label="Assistant Registrar"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.administrativeActivity"
+            android:label="Administrative Officer"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.admissionActivity"
+            android:label="Admission Officer"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.asaccountActivity"
+            android:label="Assistant Accounts Officer"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.sectionActivity"
+            android:label="Section Officer"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.computerActivity"
+            android:label="Computer Operator (Reg.)"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.officeassistantActivity"
+            android:label="Office Assistant"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.supervisorActivity"
+            android:label="Supervisor"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.vctomlssActivity"
+            android:label="VC to M.L.S.S"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.mlssexamActivity"
+            android:label="M.L.S.S (Cont. Exam)"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.mlssregActivity"
+            android:label="M.L.S.S (Reg.)"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.mlssteachingActivity"
+            android:label="M.L.S.S (Teaching Staff)"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.nightguard1Activity"
+            android:label="Night Guard"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.nightguard2Activity"
+            android:label="Night Guard"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.aiyaActivity"
+            android:label="Aiya"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.cleanerActivity"
+            android:label="Cleaner"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".office.computer2Activity"
+            android:label="Computer Operator"
+            android:parentActivityName=".parallaxActivity.officestaffsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.officestaffsActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.SelimThohaActivity"
+            android:label="Selim Thoha">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.AgricultureActivity"
+            android:label="Agriculture Dept.">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.teachingstaffsActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.buadmActivity"
+            android:label="Business Administration Dept.">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.teachingstaffsActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.agriculture.mizanActivity"
+            android:label="Mizanur Rahman">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.AgricultureActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.cse.shafiqActivity"
+            android:label="Shafiqul Islam">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.cse.cseActivity" />
+        </activity>
+        <activity
+            android:name=".noticeActivity"
+            android:label="Notice">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CGPA.cgpaActivity"
+            android:label="Calculate CGPA"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".office.vcActivity"
-            android:label="Vice-Chancellor"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".navactivity.resultActivity"
+            android:label="Result">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".office.treasurerActivity"
-            android:label="Treasurer"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.cse.cseActivity"
+            android:label="CSE Dept.">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".parallaxActivity.teachingstaffsActivity" />
         </activity>
         <activity
-            android:name=".office.registrarActivity"
-            android:label="Registrar"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.cse.SayeedActivity"
+            android:label="Sayeed Mohammad Iqbal">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.cse.cseActivity" />
         </activity>
         <activity
-            android:name=".office.controllerActivity"
-            android:label="Controller of Exam"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.cse.tomalActivity"
+            android:label="Khandaker Takdir Ahmed">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.cse.cseActivity" />
         </activity>
         <activity
-            android:name=".office.financeActivity"
-            android:label="D.Director of Fianance"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.agriculture.nahidActivity"
+            android:label="Md. Nahid Pervez">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.AgricultureActivity" />
         </activity>
         <activity
-            android:name=".office.asregistrarActivity"
-            android:label="Assistant Registrar"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.agriculture.golamActivity"
+            android:label="Md. Golam Sorwar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.AgricultureActivity" />
         </activity>
         <activity
-            android:name=".office.administrativeActivity"
-            android:label="Administrative Officer"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.agriculture.tahmidarActivity"
+            android:label="Dr. Md. Tahmidar Rahman">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.AgricultureActivity" />
         </activity>
         <activity
-            android:name=".office.admissionActivity"
-            android:label="Admission Officer"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.agriculture.shahinActivity"
+            android:label="Md. Sahin Rana">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.AgricultureActivity" />
         </activity>
         <activity
-            android:name=".office.asaccountActivity"
-            android:label="Assistant Accounts Officer"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.law.lawActivity"
+            android:label="LAW Dept.">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".parallaxActivity.teachingstaffsActivity" />
         </activity>
         <activity
-            android:name=".office.sectionActivity"
-            android:label="Section Officer"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.law.tuhinActivity"
+            android:label="Tuhin Ahmed">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.law.lawActivity" />
         </activity>
         <activity
-            android:name=".office.computerActivity"
-            android:label="Computer Operator (Reg.)"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.law.billalActivity"
+            android:label="Md. Billal Hossain">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.law.lawActivity" />
         </activity>
         <activity
-            android:name=".office.officeassistantActivity"
-            android:label="Office Assistant"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.law.mehediActivity"
+            android:label="Md. Mehedi Hasan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.law.lawActivity" />
         </activity>
         <activity
-            android:name=".office.supervisorActivity"
-            android:label="Supervisor"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.law.sultanaActivity"
+            android:label="Sultana Sakhy">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.law.lawActivity" />
         </activity>
         <activity
-            android:name=".office.vctomlssActivity"
-            android:label="VC to M.L.S.S"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.english.englishActivity"
+            android:label="English Dept.">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".parallaxActivity.teachingstaffsActivity" />
         </activity>
         <activity
-            android:name=".office.mlssexamActivity"
-            android:label="M.L.S.S (Cont. Exam)"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.english.shoebActivity"
+            android:label="Imroj Mohammad Shoeb">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.english.englishActivity" />
         </activity>
         <activity
-            android:name=".office.mlssregActivity"
-            android:label="M.L.S.S (Reg.)"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.english.amirulActivity"
+            android:label="Md. Amirul Islam">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.english.englishActivity" />
         </activity>
         <activity
-            android:name=".office.mlssteachingActivity"
-            android:label="M.L.S.S (Teaching Staff)"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.english.mamunActivity"
+            android:label="Md. Abdulla Al Mamun">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.english.englishActivity" />
         </activity>
         <activity
-            android:name=".office.nightguard1Activity"
-            android:label="Night Guard"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.english.marofActivity"
+            android:label="Abdulla Al Marof">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.english.englishActivity" />
         </activity>
         <activity
-            android:name=".office.nightguard2Activity"
-            android:label="Treasurer"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.english.tohfaActivity"
+            android:label="Ummay Tohfa">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.english.englishActivity" />
         </activity>
         <activity
-            android:name=".office.aiyaActivity"
-            android:label="Aiya"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.buadm.astarulActivity"
+            android:label="Md. Astarul Haque">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.buadmActivity" />
         </activity>
         <activity
-            android:name=".office.cleanerActivity"
-            android:label="Cleaner"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.buadm.najmulActivity"
+            android:label="Md. Najmul Hasan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.buadmActivity" />
         </activity>
         <activity
-            android:name=".office.computer2Activity"
-            android:label="Treasurer"
-            android:parentActivityName=".office.officestaffsActivity">
+            android:name=".teaching.buadm.aminulActivity"
+            android:label="Md. Aminul Islam">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.buadmActivity" />
         </activity>
-        <activity android:name=".teaching.teachingstaffActivity" />
-        <activity android:name=".teaching.SelimThohaActivity" />
-        <activity android:name=".teaching.AgricultureActivity" />
-        <activity android:name=".teaching.buadmActivity" />
-        <activity android:name=".teaching.agriculture.mizanActivity" />
-        <activity android:name=".teaching.cse.shafiqActivity" />
-        <activity android:name=".noticeActivity" />
         <activity
-            android:name=".CGPA.cgpaActivity"
-            android:label="Calculate GPA"
-            android:parentActivityName=".CGPA.cgpaActivity">
+            android:name=".teaching.buadm.mostafijurActivity"
+            android:label="Md. Mostafijur Rahman">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".office.officestaffsActivity" />
+                android:value=".teaching.buadmActivity" />
         </activity>
-        <activity android:name=".navactivity.resultActivity" />
-        <activity android:name=".teaching.cse.cseActivity" />
-        <activity android:name=".teaching.cse.SayeedActivity" />
-        <activity android:name=".teaching.cse.tomalActivity" />
-        <activity android:name=".teaching.agriculture.nahidActivity" />
-        <activity android:name=".teaching.agriculture.golamActivity" />
-        <activity android:name=".teaching.agriculture.tahmidarActivity" />
-        <activity android:name=".teaching.agriculture.shahinActivity" />
-        <activity android:name=".teaching.law.lawActivity" />
-        <activity android:name=".teaching.law.tuhinActivity" />
-        <activity android:name=".teaching.law.billalActivity" />
-        <activity android:name=".teaching.law.mehediActivity" />
-        <activity android:name=".teaching.law.sultanaActivity" />
-        <activity android:name=".teaching.english.englishActivity" />
-        <activity android:name=".teaching.english.shoebActivity" />
-        <activity android:name=".teaching.english.amirulActivity" />
-        <activity android:name=".teaching.english.mamunActivity" />
-        <activity android:name=".teaching.english.marofActivity" />
-        <activity android:name=".teaching.english.tohfaActivity" />
-        <activity android:name=".teaching.buadm.astarulActivity" />
-        <activity android:name=".teaching.buadm.najmulActivity" />
-        <activity android:name=".teaching.buadm.aminulActivity" />
-        <activity android:name=".teaching.buadm.mostafijurActivity" />
-        <activity android:name=".teaching.buadm.sabujActivity" />
-        <activity android:name=".teaching.sociology.shamsunActivity" />
-        <activity android:name=".teaching.sociology.sociologyActivity" />
-        <activity android:name=".teaching.sociology.farjanaActivity" />
-        <activity android:name=".teaching.sociology.sujauddinActivity" />
-        <activity android:name=".teaching.sociology.razwanActivity" />
-        <activity android:name=".teaching.sociology.amirulActivity" />
-        <activity android:name=".teaching.eee.eeeActivity" />
-        <activity android:name=".teaching.eee.arifurActivity" />
-        <activity android:name=".teaching.ph.phActivity" />
-        <activity android:name=".teaching.ph.mahmudulActivity" />
-        <activity android:name=".teaching.ph.nazmulActivity" />
-        <activity android:name=".teaching.ph.rockyActivity" />
-        <activity android:name=".teaching.ph.sazinActivity" />
-        <activity android:name=".navactivity.websiteviewActivity" />
+        <activity
+            android:name=".teaching.buadm.sabujActivity"
+            android:label="Md. Sabuj Hossain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.buadmActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.sociology.shamsunActivity"
+            android:label="Mst. Samsun Nahar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.sociology.sociologyActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.sociology.sociologyActivity"
+            android:label="Sociology Dept.">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.teachingstaffsActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.sociology.farjanaActivity"
+            android:label="Farjana Akter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.sociology.sociologyActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.sociology.sujauddinActivity"
+            android:label="K.M. SujaUddin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.sociology.sociologyActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.sociology.razwanActivity"
+            android:label="Md. Razwan Hasan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.sociology.sociologyActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.sociology.amirulActivity"
+            android:label="Md. Amirul Islam">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.sociology.sociologyActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.eee.eeeActivity"
+            android:label="EEE Dept.">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.teachingstaffsActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.eee.arifurActivity"
+            android:label="Md. Arifur Rahman">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.eee.eeeActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.ph.phActivity"
+            android:label="Public Health Dept.">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".parallaxActivity.teachingstaffsActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.ph.mahmudulActivity"
+            android:label="B.M. Mahmudul Hasan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.ph.phActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.ph.nazmulActivity"
+            android:label="Dr. Md. Nazmul Hossain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.ph.phActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.ph.rockyActivity"
+            android:label="Md. Rocky Khan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.ph.phActivity" />
+        </activity>
+        <activity
+            android:name=".teaching.ph.sazinActivity"
+            android:label="Sazin Islam">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".teaching.ph.phActivity" />
+        </activity>
+        <activity
+            android:name=".navactivity.websiteviewActivity"
+            android:label="Website">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".navactivity.contactActivity"
+            android:label="Contact">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".navactivity.aboutActivity"
+            android:label="About">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".navactivity.developerActivity"
+            android:label="Developer">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".developer.jewelActivity"
+            android:label="Jewel">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".navactivity.developerActivity" />
+        </activity>
+        <activity
+            android:name=".developer.ronyActivity"
+            android:label="Rony">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".navactivity.developerActivity" />
+        </activity>
+        <activity
+            android:name=".parallaxActivity.teachingstaffsActivity"
+            android:label="@string/title_activity_teachingstaffs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".parallaxActivity.officestaffsActivity"
+            android:label="@string/title_activity_officestaffs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".navactivity.need_help"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -8,11 +9,19 @@
     android:padding="10dp">
 
 <!-- Instruction is here  -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
 <LinearLayout
     android:id="@+id/bSubmit"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
+
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -29,6 +38,8 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+
 
 
     <!-- Current CGPA is here  -->
@@ -54,12 +65,18 @@
 
             <requestFocus />
         </EditText>
+
+        <ImageView
+            android:id="@+id/cgpa_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help_logo"/>
+
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp" >
+        android:layout_height="wrap_content" >
 
         <TextView
             android:id="@+id/textview2"
@@ -78,8 +95,22 @@
 
             <requestFocus />
         </EditText>
+
+        <ImageView
+            android:id="@+id/credit_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help_logo"/>
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Enter your result and course credit :"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
 
     <!-- ################################# Grade is here  ############################### -->
     <LinearLayout
@@ -98,7 +129,7 @@
 
         <Spinner
             android:id="@+id/spinner1"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays" />
 
@@ -128,7 +159,7 @@
 
         <Spinner
             android:id="@+id/spinner2"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays"
             />
@@ -158,7 +189,7 @@
 
         <Spinner
             android:id="@+id/spinner3"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays"
             />
@@ -188,7 +219,7 @@
 
         <Spinner
             android:id="@+id/spinner4"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays"
             />
@@ -218,7 +249,7 @@
 
         <Spinner
             android:id="@+id/spinner5"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays"
             />
@@ -248,7 +279,7 @@
 
         <Spinner
             android:id="@+id/spinner6"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays"
             />
@@ -278,7 +309,7 @@
 
         <Spinner
             android:id="@+id/spinner7"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays"
             />
@@ -293,7 +324,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -308,7 +338,7 @@
 
         <Spinner
             android:id="@+id/spinner8"
-            android:layout_width="90dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:entries="@array/grade_arrays"
             />
@@ -324,7 +354,6 @@
     <!-- ############################ Grade stops here  ############################### -->
 
     <LinearLayout
-        android:id="@+id/linearLayout11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -338,10 +367,13 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold" >
 
-        </Button>>
+        </Button>
 
     </LinearLayout>
 
+
 </LinearLayout>
+
+    </RelativeLayout>
 
 </ScrollView>

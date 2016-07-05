@@ -51,7 +51,203 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <!--Layout Textview -->
     <string name="totalcredit">Total Credits</string>
+    <string name="software_developed_by">Software Developed By</string>
+    <string name="contact">Contact:</string>
+    <string name="academic_info">Academic Qualifications:</string>
+    <string name="research_interest">Research Interest:</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="experiences">Experiences:</string>
+    <string name="publications">Publications:</string>
+    <string name="award">Scholarship/Awarded:</string>
+
+
+    <string name="university_name">First Capital University of Bangladesh, Chuadanga</string>
+
+    <!--Office Staffs Info -->
+    <string name="vice_chancellor">Prof. Dr.M.Obaidul Islam Joarder\nVice-Chancellor</string>
+
+
+    <!-- officer staff -->
+    <string name="vc_position">Prof. Dr. M. Obaidul Islam Joarder\nVice-Chancellor\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="treasurer_position">Prof. Abdul Mottallib\nTreasurer\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="registrar_position">Prof. Harun-Ar-Rashid\nRegistrar\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="controller_of_exam_position">Dr. Mohbub Alam\nController Of Exam.(Acting)\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="director_of_finance_position">Abdul Mazid Biswas\nD.Director Of Finance\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="assistant_registrar_position">Md. Nafiul Islam (Shanto)\nAssistant Registrar\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="administrative_position">Md. Mofijul Haque\nAdministrative Officer\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="admission_position">Md. Moshiur Rahman\nAdmission Officer\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="assistant_accounts_officer_position">Shanjit Kumar\nAssistant Accounts Officer\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="section_officer">Mst. Nilufa Yesmin\nSection Officer\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="computer_operator_reg">Md. Moniruzzaman\nComputer Operator (Reg.)\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="computer_operator_cont.exam">Md. Asaduzzaman\nComputer Operator (Cont. Exam)\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="office_assistant">Md. Abdul Aziz\nOffice Assistant\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="supervisor">Md. Minal Uddin\nSupervisor\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="vc_to_mlss">Md. Habibur Rahman\nVC to M.L.S.S</string>
+
+    <string name="mlss_cont_exam">Sojol Mohammad\nM.L.S.S (Cont. Exam)\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="mlss_reg">Md. Saiful Islam\nM.L.S.S (Reg.)</string>
+
+    <string name="mlss_teaching_staff">Md. Johurul Islam\nM.L.S.S (Teaching Staff)</string>
+
+    <string name="night_guard">Md. Santu Rahman\nNight Guard\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="night_guard_two">Md. Emon\nNight Guard\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="cleaner">Sree Gaurav Kumar Sarder\nCleaner\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+    <string name="aiya">Mst. Selina Khatun\nAiya\nFirst Capital University of Bangladesh, Chuadanga.</string>
+
+
+    <!--Teachers layout texts-->
+
+    <!--Iqbal sir info-->
+    <string name="sayeed_position">Dr. Sayeed Mohammad Iqbal\nAssociate Professore\nDepartment of CSE\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="sayeed_education">*** B.Sc from Jahangirnagar University\n*** M.Sc fromJahangirnagar University\n*** PhD from National University\nTopics: Calculation if Radiation Doses form Intake of Radionuclides, NU.</string>
+    <string name="sayeed_research">*** Medical Physics\n ***Health Physics</string>
+    <string name="sayeed_experience">17 years Teaching Experiences</string>
+
+    <!--mamun sir info -->
+    <string name="mamun_position">Md. Abdullah Al-Mamun\nLecturer\nDepartment of English\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="mamun_education">*** BA(Hons)\n***MA in English (NU).</string>
+    <string name="mamun_experience">5 years Teaching Experiences</string>
+
+    <!--Ummay Tohfa madam info -->
+    <string name="tohfa_position">Mst. Ummay Tohfa\nLecturer\nDepartment of English\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="tohfa_education">*** BA(Hons) in English\n***MA in English (NU).</string>
+    <string name="tohfa_experience">2 years Teaching Experiences</string>
+
+    <!--Tuhin Sir info -->
+    <string name="tuhin_position">Tuhin Ahmed\nLecturer\nDepartment of LAW\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="tuhin_education">*** LLB(Hons) from Rajshahi University\n***LLM Degree from Rajshahi University.</string>
+    <string name="tuhin_experience">Joined on 17th November 2012 as a Lecturer in the Department of Law of FCUB</string>
+    <string name="tuhin_research">*** Human Rights\n ***Superstitions</string>
+    <string name="tuhin_publication">*** Law and Practice of Criminal Procedure 3rd Edition, September-2015.\n*** Various Articles in National and Local daily newspapers.</string>
+
+    <!--Sultana Sakhy madam info -->
+    <string name="sultana_position">Sultana Sakhy\nTeaching Assistant\nDepartment of LAW\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="sultana_education">*** LLB(Hons) from Rajshahi University\n***LLM Degree from Rajshahi University.</string>
+    <string name="sultana_experience">Joined as teaching assistant in FCUB from 01-10-15 to till now.</string>
+    <string name="sultana_research">***Interested to research about preventive detention system and violation of Human Rights in Bangladesh perspective.</string>
+
+    <!--Shafiq Sir info -->
+    <string name="shafiq_position">Md. Shofiqul Islam\nLecturer\nDepartment of CSE\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="shafiq_education">*** B.Sc in CSE from Isalamic University\n*** M.Sc in CSE from Islamic University</string>
+    <string name="shafiq_research">*** Cognitive Radio\n*** Digital Signal and Image Processing\n*** Neural Networks.</string>
+    <string name="shafiq_experience">*** Lecturer at FCUB from 12 February 2015.</string>
+
+    <!--Sazin Islam madam -->
+    <string name="sazin_position">Sazin Islam\nLecturer\nDepartment of Public Health\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="sazin_education">*** B.Sc in Microbiology\n*** M.Sc in Microbiology\n</string>
+    <string name="sazin_research">*** Pharmaceutical Microbiology\n*** Food and Nutrition\n*** Public Health</string>
+    <string name="sazin_publication">*** Taslim T, Mahmud A, Akter S, Islam S, K.A.R.S, Alam M.J, Dutta S (2015) Uropathogenic Analysis and Commonly Used Drug Sensitivity Patterns of the Pathogenic in Dhaka City, Bangladesh, British Journal of Medicine and Medical Research. 11(2):1-8\n*** Akter T, Towhid S. T, Islam K.M.S, Fatema K, Islam S, Majumder P, Datta S (2015) Bacterial Skin and Soft Tissu Infection in Dhaka, Bangladesh, IOSR Journal of Pharmacy and Biological Sciences, 10(2):20-26. \n*** Islam S, Afroz T, Begum H, Alam M.M, Datta S (2016) Effect of chitosan on physical status of Mammals and in vivo Antimicrobial Effect on pathogenic Bacteria, IOSR Journal of Pharmacy and Biological Sciences (in press).</string>
+    <string name="sazin_experience">*** Lectureer, Dept. of Public Health, First Capital University of Bangladesh, Chuadanga. *** Researcher (Microbiology), Opso-Saline Limited, Barisal, Bangladesh.</string>
+
+    <!--Sabuj Hoshen sir -->
+    <string name="sabuj_position">Md. Sabuj Hoshen\nLecturer\nDepartment of Business Administration\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="sabuj_education">*** MBA (Finance and Banking), PUST. \n*** BBA (Finance and Banking), PUST </string>
+    <string name="sabuj_research">*** Finance and Banking\n*** Mutual Fund Management.</string>
+    <string name="sabuj_experience">No Info Available</string>
+
+    <!-- Md. Najmul Hasan sir info -->
+    <string name="najmul_position">Md. Najmul Hasan\nLecturer\nDepartment of Business Administration\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="najmul_education">*** B.B.A (Accounting and information System)\n*** M.B.A (Islamic University).</string>
+    <string name="najmul_research">*** Entrepreneurship development\n*** E-Commerce\n*** Economic Development and planning\n*** Social Welfare\n*** worring environment and law in garments industries in Bangladesh\n*** Hygienic Food and our Rights\n***Energy security and Bangladesh\n*** Global Warming and Vulnerable effects on Bangladesh. </string>
+    <string name="najuml_experience">Working as a lecturer of Business Administration in FCUB since june 30, 2013.</string>
+
+    <!--Mostafijur Rahman sir -->
+    <string name="mostafiz_position">Md. Mostafijur Rahman\nLecturer\nDepartment of Business Administration\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="mostafiz_education">*** BBA (Management Studies), University Of Rajshahi.\n*** MBA (Management Studies), University Of Rajshahi</string>
+    <string name="mostafiz_research">*** Human Resource Development.\n*** Organization Behaviour.</string>
+    <string name="mostafiz_experience">No Info Available</string>
+
+    <!--Mohbub Alam sir-->
+    <string name="mohbub_position">Dr. Md. Mohbub Alam\nAssociate Professore\nDepartment of Public Health\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="mohbub_education">***Ph.D\n*** M.Sc (Thesis)\n*** B.Sc (Hon’s)</string>
+    <string name="mohbub_research">*** Environmental Management \n*** Health Security</string>
+    <string name="mohbub_publication">*** Alam M. M and Whahiduzzaman A. K. M. (2006), Impact on Ganges-kobadak Irrigation Project, Bhugal Patrika, 25:172-178.\n*** Alam M. M, Wahiduzzaman A. K. M and Islam MN (2007), Impact of Rational Irrigation Practicet, Bhugal Patrika, 26:210-223\n***Alam M. M (2010), Ganges Water Withdrawal: It’s Impact on environment in the Ganges-Kobadak Irrigation Project Area, The Journal of Geo Environment, 09\n*** Alam M. M (2013) Ganges Water Diversion: It’s Impact on Environment in The Ganges-Kobadak Irrigation Project Area, The Journal of Geo Environment, 10:101-135\n*** Islam S, Afroz T, Begum H, Alam M. M, Dutta S (2016) Effect of Chitosan on Physical status of Mammals and in vivo Antimicrobial Effect on Pathogenic Bacteria, IOSR Journal of Pharmacy and Biological Sciences (in press)\n*** Alam M. M (2007), Assessing the impact of Farakka Barrage on Agriculture in the Ganges-Kobadak Irrigation Project Area, Bangladesh National Geographical Conference (12th)\n*** Alam M. M (2010), Environmental Impact Assesment on the Ganges-Kobadak Irrigation Project Area, Bangladesh National Geographical Conference (13th)\n*** lam M. M (2012), Water Diversion and Climate Change in the Ganges-Kobadak Irrigation Project Area, Bangladesh National Geographical Conference (14th).</string>
+    <string name="mohbub_experience">*** Working as a controller of Examinations (Acting), First Capital University Of Bangladesh, Chuadanga, Bangladesh.\n*** Working as a Associate Professor and Head, Department of Public Health, First Capital University of Bangladesh, Chuadanga, Bangladesh.</string>
+    <string name="mohbub_awarded">*** National University Scholarship for Ph.D\n*** NSICT Scholarship in M.Sc (for thesis)\n*** Dean Scholarship in Honors Level\n*** UGC grant on the basis of Honors Level.</string>
+
+    <!--Md. Mehedi Hasan sir -->
+    <string name="mehedi_position">Md. Mehedi Hasan\nLecturer\nDepartment of LAW\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="mehedi_education">***LLB\n*** LLM</string>
+    <string name="mehedi_publication">*** Legal System in the Chittagong hill tracts (CHT) in the light of national laws\n*** case laws and customary laws.</string>
+    <string name="mehedi_experience">Teaching as lecturer in FCUB since 01/10/15</string>
+
+    <!--Abdullah Al-Marof sir info -->
+    <string name="marof_position">Abdullah Al-Marof\nLecturer\nDepartment of English\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="marof_education">*** B.A (Hons) in English form Comilla University.\n***M.A in English Literature form Comilla University.</string>
+    <string name="marof_publication">*** “Mrittu theke Fera”</string>
+    <string name="marof_research">*** Post Colonial Study, language and literature.\n*** Cultural Study, Film and Media.</string>
+
+    <!--B.M. Mahmudul Hasan sir info -->
+    <string name="mahmudul_position">B.M. Mahmudul Hasan\nLecturer\nDepartment of Punlic Health\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="mahmudul_education">*** B.Sc Ag. (Hons) in Genetic Engineering Rajshahi\n*** M.Sc (Food and Nutrition) IU, Ph.D (Fellow)</string>
+    <string name="mahmudul_research">***	Molecular Genetics\n*** Human Nutrition\n***Genetic Engineering</string>
+    <string name="mahmudul_publication">*** Characterification of Rhisobium in Bangladesh. Lap Publication, Germany,ISBN: 978-3659-36450-1.\n *** Functional Characterifation of elapid venom toxin protein and related non toxin protein of human. ISSN: 1994-7941 Jernal: Trends in Bioinformatics.\n*** Biotechnology and environment, Journal – Bondhon.\n*** Agriculture and environment; www.amadersomoy.com</string>
+    <string name="mahmudul_experience">*** Lecturer, Gono University, Dhaka.\n*** Lecturer, Sikder Science and Technology University.\n***Microbiologist, FNF Pharma Ltd, Dhaka.</string>
+
+    <!-- Md. Amirul Islam (Joy) sir info -->
+    <string name="joy_position">Md. Amirul Islam (Joy)\nLecturer\nDepartment of English\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="joy_education">*** BA (Hons)\n*** MA in English (IU)</string>
+    <string name="joy_experience">*** Since 2005, formerly: Ghatail Cantonment Public School and College, Tangail, Savar University College, Savar, Dhaka.</string>
+    <string name="joy_research">*** In Folklore, Specially Lalon Shah and his followers.</string>
+
+    <!--  Imroj Muhammad Shoeb sir info -->
+    <string name="imroj_position"> Imroj Muhammad Shoeb\nLecturer\nDepartment of English\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="imroj_education">*** BA (Hons)\n*** MA \n*** LLB</string>
+    <string name="imroj_experience">*** Served in Govt. Colleges and other institutions for 10 years. Got retirement in 2009.</string>
+
+    <!-- Farjana Akter madam info -->
+    <string name="farjana_position">Farjana Akter\nLecturer\nDepartment of Public Health\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="farjana_education">*** Hons – B.S.S [Jagannath University]. \n*** Masters – M.S.S [Jagannath University]</string>
+    <string name="farjana_experience">*** Lecturer FCUB From 1/3/2015 to till now.</string>
+    <string name="farjana_research">*** 1. Different serial problems like- drug addiction, violence against woman, power structure, etc.</string>
+
+    <!-- Md. Billal Hossain sir info -->
+    <string name="billal_position">Md. Billal Hossain\nLecturer\nDepartment of LAW\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="billal_education">*** LLB(Hons) from Rajshahi University\n ***LLM from Rajshahi University</string>
+
+    <!-- Md. Astarul Hoque sir info -->
+    <string name="astarul_position"> Md. Astarul Hoque\nLecturer\nDepartment of Business Administration\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="astarul_education">*** B.B.A –	 Major in Marketing studies and international marketing.\n*** M.B.A - Major in Marketing studies and international marketing. </string>
+    <string name="astarul_research">*** Marketing concept, customer satisfaction and various marketing strategies.\n*** International marketing, Advertising and Promotion.</string>
+
+    <!-- Md. Ariful Rahman (Uzzal) sir info -->
+    <string name="ariful_position"> Md. Ariful Rahman (Uzzal)\nLecturer\nDepartment of EEE\nFirst Capital University of Bangladesh, Chuadanga.</string>
+    <string name="ariful_education">***B.Sc in Applied Physics and Electronics Engineering\n ***M.Sc in Applied Physics and Electronics Engineering.\n*** University of Rajshahi, Bangladesh. </string>
+    <string name="ariful_research">*** Nano technology and communication.</string>
+    <string name="ariful_experience">*** 2(two) years experience.</string>
+
+
+    <!--No info texts -->
+
+    <string name="no_info">No info Available</string>
+    <string name="no_email">Email: No Email Available</string>
+    <string name="title_activity_teachingstaffs">Teaching Staff</string>
+    <string name="title_activity_officestaffs">Office Staff</string>
+    <string name="mobile">Mobile:</string>
+    <string name="contact_info">Contact info:</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="need_nhelp">Need\nHelp?</string>
 
 
 </resources>

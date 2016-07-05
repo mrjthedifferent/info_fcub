@@ -1,12 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="net.fcubd.info_fcub_mahfuz.teaching.english.englishActivity">
+    tools:context="net.fcubd.info_fcub_mahfuz.teaching.english.englishActivity"
+    android:background="#028FD1">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imroj Mohammad shoeb\nAssociate Professore"
+            android:textAllCaps="false"
+            android:id="@+id/shoeb"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md. Amirul Islam\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/joy"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Md. Abdulla AL Mamun\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/mamun"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abdulla Al Marof\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/marof"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mst. Ummay Tohfa\nLecturer"
+            android:textAllCaps="false"
+            android:id="@+id/tohfa"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+</ScrollView>
