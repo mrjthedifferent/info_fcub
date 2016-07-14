@@ -2,8 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/share_app"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Share with friends"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/check_for_updates"
+        android:orderInCategory="100"
+        android:title="Check for Updates"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/developer"
+        android:orderInCategory="100"
+        android:title="Developer"
+        android:icon="@drawable/call"
+        app:showAsAction="always" />
+
+
 </menu>

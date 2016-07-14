@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import net.fcubd.info_fcub_mahfuz.MainActivity;
 import net.fcubd.info_fcub_mahfuz.R;
 
 import java.io.File;
@@ -33,7 +34,7 @@ public class aboutActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
 
-                Update("http://fcubd.net/app/info_fcub_latest.apk");
+                Update("http://fcubd.net/info_fcub/info_fcub_latest.apk");
                 Toast.makeText(aboutActivity.this, "Checking for Updates....", Toast.LENGTH_LONG).show();
                 Toast.makeText(aboutActivity.this, "Downloading Updates....Please Wait..", Toast.LENGTH_LONG).show();
 
@@ -60,7 +61,7 @@ public class aboutActivity extends AppCompatActivity {
                             + "/download/";
                     File file = new File(PATH);
                     file.mkdirs();
-                    File outputFile = new File(file, "app.apk");
+                    File outputFile = new File(file, "info_fcub.apk");
                     FileOutputStream fos = new FileOutputStream(outputFile);
 
                     InputStream is = c.getInputStream();
@@ -73,7 +74,7 @@ public class aboutActivity extends AppCompatActivity {
                     fos.close();
                     is.close();
                     Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/download/" + "app.apk")), "application/vnd.android.package-archive");
+                    intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/download/" + "info_fcub.apk")), "application/vnd.android.package-archive");
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
 
@@ -93,6 +94,12 @@ public class aboutActivity extends AppCompatActivity {
 
         }.execute();
 
+    }
+    @Override
+    public void onBackPressed() {
+        Intent gotomain = new Intent(aboutActivity.this, MainActivity.class);
+        startActivity(gotomain);
+        return;
     }
 
 }

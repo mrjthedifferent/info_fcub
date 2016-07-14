@@ -248,6 +248,7 @@
     <string name="contact_info">Contact info:</string>
     <string name="personal_information">Personal Information</string>
     <string name="need_nhelp">Need\nHelp?</string>
+    <string name="help_text">If you find any error or wrong information please contact with developers, we will try to fix them...\nYou can manually download updates of this app from http://www.fcubd.net/info_fcub/info_fcub.php or click check for updates from this app..</string>
 
 
 </resources>

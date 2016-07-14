@@ -4,35 +4,35 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/home"
             android:title="Home" />
         <item
             android:id="@+id/nav_notice"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/about"
             android:title="Notice" />
         <item
             android:id="@+id/nav_officestaff"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/people"
             android:title="Office Staff" />
         <item
             android:id="@+id/nav_teachingstaff"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/people_2"
             android:title="Teaching Staff" />
         <item
             android:id="@+id/nav_result"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/result"
             android:title="Result"/>
         <item
             android:id="@+id/nav_cgpacalculator"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/notice"
             android:title="Calculate GPA and CGPA"/>
         <item
             android:id="@+id/nav_web"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/web2"
             android:title="Visit Our Website"/>
         <item
             android:id="@+id/nav_contact"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/about"
             android:title="Contact Us"/>
 
     </group>
@@ -40,12 +40,16 @@
     <item android:title="Other">
         <menu>
             <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help_logo"
+                android:title="Help Menu" />
+            <item
                 android:id="@+id/nav_About"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/result"
                 android:title="About" />
             <item
                 android:id="@+id/nav_Developer"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/developer"
                 android:title="Developer" />
         </menu>
     </item>

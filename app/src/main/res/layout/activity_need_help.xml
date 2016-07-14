@@ -5,4 +5,57 @@
     android:layout_height="match_parent"
     tools:context="net.fcubd.info_fcub_mahfuz.navactivity.need_help">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Help Menu"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/textView21"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView21"
+        android:background="@color/colorPrimary"
+        android:id="@+id/view2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout231"
+        android:background="@drawable/linearlayout_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/help_text"
+            android:id="@+id/textView23"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout231"
+        android:text="Go to Developers Page"
+        android:layout_marginTop="10dp"
+        android:id="@+id/nav_dev"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:padding="10dp"/>
+
+
 </RelativeLayout>

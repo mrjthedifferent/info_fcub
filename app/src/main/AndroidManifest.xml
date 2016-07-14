@@ -585,7 +585,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".navactivity.need_help"></activity>
+        <activity
+            android:name=".navactivity.need_help"
+            android:label="Help_Menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
