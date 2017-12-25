@@ -43,7 +43,7 @@ public class websiteviewActivity extends AppCompatActivity {
             websitewebview = (WebView) findViewById(R.id.websitewebview);
             WebSettings webSettings3 = websitewebview.getSettings();
             webSettings3.setJavaScriptEnabled(true);
-            websitewebview.loadUrl("http://fcubd.net");
+            websitewebview.loadUrl("http://fcub.edu.bd");
             websitewebview.setWebViewClient(new WebViewClient() {
                 @Override
                 public void onPageStarted(WebView view, String url, Bitmap favicon) {

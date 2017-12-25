@@ -30,7 +30,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
 
-public class resultActivity extends AppCompatActivity {
+public class webportalActivity extends AppCompatActivity {
 
     private WebView webView;
     private ProgressBar progressBar;
@@ -61,7 +61,7 @@ public class resultActivity extends AppCompatActivity {
             setContentView(R.layout.activity_websiteview);
 
             // define url that will open in webView
-            String webViewUrl = "http://fcub.edu.bd/result";
+            String webViewUrl = "http://fcub.edu.bd";
 
             // webView code without handling external links
             webView = (WebView) findViewById(R.id.websitewebview);
@@ -218,7 +218,7 @@ public class resultActivity extends AppCompatActivity {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent goback = new Intent(resultActivity.this, MainActivity.class);
+                    Intent goback = new Intent(webportalActivity.this, MainActivity.class);
                     startActivity(goback);
                 }
             });
@@ -226,7 +226,7 @@ public class resultActivity extends AppCompatActivity {
             button2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent tryagain = new Intent(resultActivity.this, resultActivity.class);
+                    Intent tryagain = new Intent(webportalActivity.this, webportalActivity.class);
                     startActivity(tryagain);
                 }
             });
@@ -249,68 +249,68 @@ public class resultActivity extends AppCompatActivity {
         return activeNetworkInfo !=null;
     }
 
-    // return here when file selected from camera or from SD Card
-    @Override
-    public void onActivityResult ( int requestCode, int resultCode, Intent data){
+        // return here when file selected from camera or from SD Card
+        @Override
+        public void onActivityResult ( int requestCode, int resultCode, Intent data){
 
-        // code for all versions except of Lollipop
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            // code for all versions except of Lollipop
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
 
-            if (requestCode == FILECHOOSER_RESULTCODE) {
-                if (null == this.mUploadMessage) {
+                if (requestCode == FILECHOOSER_RESULTCODE) {
+                    if (null == this.mUploadMessage) {
+                        return;
+                    }
+
+                    Uri result = null;
+
+                    try {
+                        if (resultCode != RESULT_OK) {
+                            result = null;
+                        } else {
+                            // retrieve from the private variable if the intent is null
+                            result = data == null ? mCapturedImageURI : data.getData();
+                        }
+                    } catch (Exception e) {
+                        Toast.makeText(getApplicationContext(), "activity :" + e, Toast.LENGTH_LONG).show();
+                    }
+
+                    mUploadMessage.onReceiveValue(result);
+                    mUploadMessage = null;
+                }
+
+            } // end of code for all versions except of Lollipop
+
+            // start of code for Lollipop only
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+                if (requestCode != FILECHOOSER_RESULTCODE || mFilePathCallback == null) {
+                    super.onActivityResult(requestCode, resultCode, data);
                     return;
                 }
 
-                Uri result = null;
+                Uri[] results = null;
 
-                try {
-                    if (resultCode != RESULT_OK) {
-                        result = null;
+                // check that the response is a good one
+                if (resultCode == Activity.RESULT_OK) {
+                    if (data == null || data.getData() == null) {
+                        // if there is not data, then we may have taken a photo
+                        if (mCameraPhotoPath != null) {
+                            results = new Uri[]{Uri.parse(mCameraPhotoPath)};
+                        }
                     } else {
-                        // retrieve from the private variable if the intent is null
-                        result = data == null ? mCapturedImageURI : data.getData();
-                    }
-                } catch (Exception e) {
-                    Toast.makeText(getApplicationContext(), "activity :" + e, Toast.LENGTH_LONG).show();
-                }
-
-                mUploadMessage.onReceiveValue(result);
-                mUploadMessage = null;
-            }
-
-        } // end of code for all versions except of Lollipop
-
-        // start of code for Lollipop only
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-
-            if (requestCode != FILECHOOSER_RESULTCODE || mFilePathCallback == null) {
-                super.onActivityResult(requestCode, resultCode, data);
-                return;
-            }
-
-            Uri[] results = null;
-
-            // check that the response is a good one
-            if (resultCode == Activity.RESULT_OK) {
-                if (data == null || data.getData() == null) {
-                    // if there is not data, then we may have taken a photo
-                    if (mCameraPhotoPath != null) {
-                        results = new Uri[]{Uri.parse(mCameraPhotoPath)};
-                    }
-                } else {
-                    String dataString = data.getDataString();
-                    if (dataString != null) {
-                        results = new Uri[]{Uri.parse(dataString)};
+                        String dataString = data.getDataString();
+                        if (dataString != null) {
+                            results = new Uri[]{Uri.parse(dataString)};
+                        }
                     }
                 }
-            }
 
-            mFilePathCallback.onReceiveValue(results);
-            mFilePathCallback = null;
+                mFilePathCallback.onReceiveValue(results);
+                mFilePathCallback = null;
 
-        } // end of code for Lollipop only
+            } // end of code for Lollipop only
 
-    }
+        }
     // handling back button
     @Override
     public void onBackPressed() {

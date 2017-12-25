@@ -34,65 +34,15 @@ public class aboutActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
 
-                Update("http://fcubd.net/info_fcub/info_fcub_latest.apk");
-                Toast.makeText(aboutActivity.this, "Checking for Updates....", Toast.LENGTH_LONG).show();
-                Toast.makeText(aboutActivity.this, "Downloading Updates....Please Wait..", Toast.LENGTH_LONG).show();
-
+                final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+                }
             }
 
         });
-
-    }
-
-    public void Update(final String apkurl) {
-        new AsyncTask<Void, String, String>() {
-            String result="";
-            @Override
-            protected String doInBackground(Void... params) {
-                try {
-                    URL url = new URL(apkurl);
-                    HttpURLConnection c = (HttpURLConnection) url
-                            .openConnection();
-                    c.setRequestMethod("GET");
-
-                    c.connect();
-
-                    String PATH = Environment.getExternalStorageDirectory()
-                            + "/download/";
-                    File file = new File(PATH);
-                    file.mkdirs();
-                    File outputFile = new File(file, "info_fcub.apk");
-                    FileOutputStream fos = new FileOutputStream(outputFile);
-
-                    InputStream is = c.getInputStream();
-
-                    byte[] buffer = new byte[1024];
-                    int len1 = 0;
-                    while ((len1 = is.read(buffer)) != -1) {
-                        fos.write(buffer, 0, len1);
-                    }
-                    fos.close();
-                    is.close();
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/download/" + "info_fcub.apk")), "application/vnd.android.package-archive");
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
-
-                } catch (IOException e) {
-                    result="No Update Available!!!!!";
-                    e.printStackTrace();
-
-                }
-                return result;
-            }
-
-            protected void onPostExecute(String result) {
-
-                Toast.makeText(getApplicationContext(), result,
-                        Toast.LENGTH_LONG).show();
-            };
-
-        }.execute();
 
     }
     @Override

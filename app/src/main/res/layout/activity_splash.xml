@@ -41,4 +41,19 @@
         android:layout_below="@+id/welcome_text"
         android:layout_centerHorizontal="true"/>
 
+    <TextView
+        android:id="@+id/developer"
+        style="@style/TextViewAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.0"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Developed By: MRJ - CSE, 9th Batch"
+        android:textColor="#fff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+
 </RelativeLayout>

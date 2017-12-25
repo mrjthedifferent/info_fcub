@@ -31,6 +31,7 @@ import net.fcubd.info_fcub_mahfuz.navactivity.contactActivity;
 import net.fcubd.info_fcub_mahfuz.navactivity.developerActivity;
 import net.fcubd.info_fcub_mahfuz.navactivity.need_help;
 import net.fcubd.info_fcub_mahfuz.navactivity.resultActivity;
+import net.fcubd.info_fcub_mahfuz.navactivity.webportalActivity;
 import net.fcubd.info_fcub_mahfuz.navactivity.websiteviewActivity;
 import net.fcubd.info_fcub_mahfuz.parallaxActivity.officestaffsActivity;
 import net.fcubd.info_fcub_mahfuz.parallaxActivity.teachingstaffsActivity;
@@ -181,7 +182,7 @@ public class MainActivity extends AppCompatActivity
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.putExtra(Intent.EXTRA_TEXT,
-                    "Hey, check out info_fcub android app at: http://www.fcubd.net/info_fcub/info_fcub_v_two_zero_one.apk");
+                    "Hey, check out FCUB android app at: https://play.google.com/store/apps/details?id=net.fcubd.info_fcub_mahfuz");
             sendIntent.setType("text/plain");
             startActivity(sendIntent);
             return true;
@@ -235,7 +236,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(cgpa);
         }else if(id == R.id.nav_web){
 
-            Intent web = new Intent(MainActivity.this, websiteviewActivity.class);
+            Intent web = new Intent(MainActivity.this, webportalActivity.class);
             startActivity(web);
 
         } else if (id == R.id.nav_contact) {

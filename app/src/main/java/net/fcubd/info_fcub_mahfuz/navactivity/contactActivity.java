@@ -1,10 +1,13 @@
 package net.fcubd.info_fcub_mahfuz.navactivity;
 
+import android.Manifest;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,27 +37,25 @@ public class contactActivity extends AppCompatActivity {
     Button map_details;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
 
-        telephone_details1 = (Button)findViewById(R.id.telephone_details1);
+        telephone_details1 = (Button) findViewById(R.id.telephone_details1);
 
-        telephone_details2 = (Button)findViewById(R.id.telephone_details2);
+        telephone_details2 = (Button) findViewById(R.id.telephone_details2);
 
-        mobile_details1 = (Button)findViewById(R.id.mobile_details1);
+        mobile_details1 = (Button) findViewById(R.id.mobile_details1);
 
-        mobile_details2 = (Button)findViewById(R.id.mobile_details2);
+        mobile_details2 = (Button) findViewById(R.id.mobile_details2);
 
-        email_details1 = (Button)findViewById(R.id.email_details1);
+        email_details1 = (Button) findViewById(R.id.email_details1);
 
-        email_details2 = (Button)findViewById(R.id.email_details2);
+        email_details2 = (Button) findViewById(R.id.email_details2);
 
-        map_details = (Button)findViewById(R.id.map_details);
-
+        map_details = (Button) findViewById(R.id.map_details);
 
 
         telephone_details1.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +75,16 @@ public class contactActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+88076162722"));
+                        if (ActivityCompat.checkSelfPermission(contactActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                            // TODO: Consider calling
+                            //    ActivityCompat#requestPermissions
+                            // here to request the missing permissions, and then overriding
+                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                            //                                          int[] grantResults)
+                            // to handle the case where the user grants the permission. See the documentation
+                            // for ActivityCompat#requestPermissions for more details.
+                            return;
+                        }
                         startActivity(i);
                     }
                 });
@@ -97,7 +108,6 @@ public class contactActivity extends AppCompatActivity {
                 });
             }
         });
-
 
 
         telephone_details2.setOnClickListener(new View.OnClickListener() {
@@ -116,8 +126,18 @@ public class contactActivity extends AppCompatActivity {
                 call.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent i = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+88076164199"));
-                        startActivity(i);
+                        Intent i5 = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+88076164199"));
+                        if (ActivityCompat.checkSelfPermission(contactActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                            // TODO: Consider calling
+                            //    ActivityCompat#requestPermissions
+                            // here to request the missing permissions, and then overriding
+                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                            //                                          int[] grantResults)
+                            // to handle the case where the user grants the permission. See the documentation
+                            // for ActivityCompat#requestPermissions for more details.
+                            return;
+                        }
+                        startActivity(i5);
                     }
                 });
 
@@ -140,7 +160,6 @@ public class contactActivity extends AppCompatActivity {
                 });
             }
         });
-
 
 
         mobile_details1.setOnClickListener(new View.OnClickListener() {
@@ -160,6 +179,16 @@ public class contactActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i2 = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+8801967595429"));
+                        if (ActivityCompat.checkSelfPermission(contactActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                            // TODO: Consider calling
+                            //    ActivityCompat#requestPermissions
+                            // here to request the missing permissions, and then overriding
+                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                            //                                          int[] grantResults)
+                            // to handle the case where the user grants the permission. See the documentation
+                            // for ActivityCompat#requestPermissions for more details.
+                            return;
+                        }
                         startActivity(i2);
                     }
                 });
@@ -171,7 +200,7 @@ public class contactActivity extends AppCompatActivity {
 
                         String number = "+8801967595429";  // The number on which you want to send SMS
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", number, null)));
-                        }
+                    }
                 });
 
                 Button declineButton = (Button) dialog.findViewById(R.id.declineButton);
@@ -203,6 +232,16 @@ public class contactActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+8801983278199"));
+                        if (ActivityCompat.checkSelfPermission(contactActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                            // TODO: Consider calling
+                            //    ActivityCompat#requestPermissions
+                            // here to request the missing permissions, and then overriding
+                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                            //                                          int[] grantResults)
+                            // to handle the case where the user grants the permission. See the documentation
+                            // for ActivityCompat#requestPermissions for more details.
+                            return;
+                        }
                         startActivity(i);
                     }
                 });

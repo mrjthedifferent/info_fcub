@@ -27,7 +27,7 @@ public class noticeActivity extends AppCompatActivity {
     Button button2;
     Button button3;
 
-    final Activity activity=this;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,68 +37,9 @@ public class noticeActivity extends AppCompatActivity {
         if(isNetworkAvailable()) {
             setContentView(R.layout.activity_notice);
             noticewebView = (WebView) findViewById(R.id.noticewebView);
-            WebSettings webSettings2 = noticewebView.getSettings();
-            webSettings2.setJavaScriptEnabled(true);
-            noticewebView.loadUrl("http://fcubd.net/notice.php");
-            noticewebView.setWebViewClient(new WebViewClient() {
-                @Override
-                public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                    super.onPageStarted(view, url, favicon);
-                    if (progressDialog == null) {
-                        progressDialog = new ProgressDialog(activity);
-                        progressDialog.setMessage("Connecting to Notice Board...");
-                        progressDialog.show();
-
-                        // Hide the webview while loading
-                        noticewebView.setEnabled(false);
-                    }
-                }
-
-                @Override
-                public void onPageFinished(WebView view, String url) {
-                    if (progressDialog.isShowing()) {
-                        progressDialog.dismiss();
-                        progressDialog = null;
-                        noticewebView.setEnabled(true);
-                    }
-                }
-
-                public void onReceivedError(WebView view, int errorCod, String description, String failingUrl) {
-                    setContentView(R.layout.activity_error);
-
-                    button = (Button)findViewById(R.id.button);
-                    button2 = (Button)findViewById(R.id.button2);
-                    button3 = (Button)findViewById(R.id.button3);
-
-                    button.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent goback = new Intent(noticeActivity.this, MainActivity.class);
-                            startActivity(goback);
-                        }
-                    });
-
-                    button2.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent tryagain = new Intent(noticeActivity.this, resultActivity.class);
-                            startActivity(tryagain);
-                        }
-                    });
-
-                    button3.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent settings = new Intent(android.provider.Settings.ACTION_SETTINGS);
-                            settings.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(settings);
-                        }
-                    });
-                    Toast.makeText(noticeActivity.this, "Your Internet Connection May not be active Or " + description, Toast.LENGTH_LONG).show();
-                }
-            });
-
-
+            WebSettings webSettings = noticewebView.getSettings();
+            webSettings.setJavaScriptEnabled(true);
+            noticewebView.loadUrl("http://fcub.edu.bd/notice.php");
         }
         if (!isNetworkAvailable()) {
             setContentView(R.layout.activity_error);
