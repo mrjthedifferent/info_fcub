@@ -130,6 +130,6 @@ public class shafiqActivity extends AppCompatActivity {
         });
 
         //image details
-        teachers_img.setImageResource(R.drawable.shafiq_sir);
+        teachers_img.setImageResource(R.drawable.noimage);
     }
 }
